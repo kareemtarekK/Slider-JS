@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: fantasy;
+    background-color: rgb(58, 55, 55);
+}
+.container{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+.container img{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+.container img.active{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.container .sildes_number{
+    z-index: 2;
+    background-color: gray;
+    padding: 5px 15px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 9px;
+}
+.control{
+   width: 600px;
+   margin: 0px auto;
+   position: relative;
+}
+.control .next,
+.control .prev{
+    background-color: rgb(2, 8, 58);
+    color: rgb(88, 37, 42);
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+ .control .next.hidden,
+ .control .prev.hidden{
+    background-color:rgba(166, 207, 221, 0.5);
+    cursor: no-drop;
+    transition: cursor .3s; 
+ }  
+.control .next{
+    float: right;
+}
+.control .prev{
+    float: left;
+}
+.indecators{
+    width: 60%;
+    position: absolute;
+    left: 20%;
+} 
+.indecators ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indecators ul li{
+    background-color: #eee;
+    padding: 9px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.indecators ul li.active{
+    background-color:rgb(12, 122, 21);
+    color: white;
+    transition: background-color 0.5s;
+}
