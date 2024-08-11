@@ -19,6 +19,6 @@ slider had built with js in main in addition to html , css
 ### when you reach to minium number images you will find shape of previous button like this
 <img src="https://github.com/kareemtarekK/Slider-JS/blob/main/imgReadme/9.jpg" width="300px" height="250px">
 </br>
-### to see project [click-here](https://kareemtarekk.github.io/Slider-JS)
+### to see project (click-here)[https://kareemtarekk.github.io/Slider-JS]
 
 
